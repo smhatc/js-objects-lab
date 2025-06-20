@@ -71,7 +71,7 @@ Solve Exercise 5 here:
 console.log("Exercise 5: Adding three more Pokémon to the 'game.party' array:");
 const threeMorePokemon = [pokemon[145], pokemon[149], pokemon[150]];
 threeMorePokemon.forEach((pokemon) => {
-        game.party.push(pokemon);
+  game.party.push(pokemon);
 });
 console.log(game.party);
 console.log(separator);
@@ -86,7 +86,7 @@ Solve Exercise 6 here:
 
 console.log("Exercise 6: Setting the 'completed' property for gyms with a difficulty lower than 3:");
 game.gyms.forEach((gym) => {
-        if (gym.difficulty < 3) gym.completed = true;
+  if (gym.difficulty < 3) gym.completed = true;
 });
 console.log(game.gyms);
 console.log(separator);
@@ -174,7 +174,7 @@ Also, log the `game.items` array to confirm that the pokeball quantity is being 
 Solve Exercise 11 here:
 */
 
-console.log("Exercise 11: Modifying the 'catchPokemon' method to decrease the pokeball quantity by 1 each time it is run. Also catching 'Kadabra' with the updated method.");
+console.log("Exercise 11: Modifying the 'catchPokemon' method to decrease the pokeball quantity by 1 each time it is run. Also catching 'Kadabra' with the updated method:");
 game.catchPokemon = (pokemonObj) => {
   game.party.push(pokemonObj);
   game.items[1].quantity -= 1;
@@ -195,7 +195,7 @@ Solve Exercise 12 here:
 
 console.log("Exercise 12: Setting the 'completed' property for gyms with a difficulty lower than 6:");
 game.gyms.forEach((gym) => {
-        if (gym.difficulty < 6 && !(gym.completed)) gym.completed = true;
+  if (gym.difficulty < 6 && !(gym.completed)) gym.completed = true;
 });
 console.log(game.gyms);
 console.log(separator);
@@ -243,19 +243,15 @@ Exercise 14
 
 This method should:
   - Not accept any arguments.
-  - Count the number of Pokemon in the party.
-  - return the found number of Pokemon in the party.
+  - Count the number of Pokémon in the party.
+  - return the found number of Pokémon in the party.
 
 Solve Exercise 14 here:
 */
 
 console.log("Exercise 14: Creating the 'game.partyCount' method as per the requirements and returning the number of Pokémon currently in the party:");
 game.partyCount = () => {
-  let pokemonInParty = 0;
-  game.party.forEach((pokemon) => {
-    pokemonInParty += 1;
-  });
-  return pokemonInParty;
+  return game.party.length;
 };
 console.log(game.partyCount());
 console.log(separator);
@@ -270,7 +266,7 @@ Solve Exercise 15 here:
 
 console.log("Exercise 15: Setting the 'completed' property for gyms with a difficulty lower than 8:");
 game.gyms.forEach((gym) => {
-        if (gym.difficulty < 8 && !(gym.completed)) gym.completed = true;
+  if (gym.difficulty < 8 && !(gym.completed)) gym.completed = true;
 });
 console.log(game.gyms);
 console.log(separator);
