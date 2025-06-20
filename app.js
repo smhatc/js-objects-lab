@@ -29,7 +29,7 @@ console.log(separator);
 
 /* Exercise 2 */
 
-console.log("Exercise 2: Initial 'game' object for reference:")
+console.log("Exercise 2: Initial 'game' object for reference:");
 console.log(game);
 console.log(separator);
 
