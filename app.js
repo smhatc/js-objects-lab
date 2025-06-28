@@ -42,7 +42,7 @@ Solve Exercise 3 here:
 */
 
 console.log("Exercise 3: Adding a 'difficulty' property to the 'game' object:");
-game.difficulty = "Med";
+game.difficulty = "Easy";
 console.log(game);
 console.log(separator);
 
